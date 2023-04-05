@@ -1,0 +1,32 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+data = pd.read_csv(r"C:\Users\jxk99731\OneDrive - Science and Technology Facilities Council\Documents\Astec"
+                   r"\THP Data Logger\THP_DATA_1week.csv")
+print(data)
+# ==MULTI_PLOTS==#
+amb_temp = data["Ambient Temperature"]
+pressure = data["Pressure"]
+humidity = data["Humidity"]
+data.head()
+fig, axs = plt.subplots(3, sharex=True)
+fig.suptitle('Temperature, Pressure and Humidity in RF Room 1')
+axs[0].plot(amb_temp)
+axs[0].set_ylabel('Temperature ($^\circ$C)')
+axs[0].grid()
+axs[1].plot(pressure)
+axs[1].set_ylabel('Pressure (hPa)')
+axs[1].grid()
+axs[2].plot(humidity)
+axs[2].set_ylabel('Humidity (%)')
+axs[2].set_xlabel('Time (Minutes)')
+axs[2].grid()
+plt.show()
+
+# ==SINGLE_PLOTS==#
+# data["Ambient Temperature (C)"].plot()
+# plt.ylabel('Ambient Temperature (C)')
+# plt.xlabel('Time (minutes)')
+# plt.title('RF Room 1 Temperature Over Time')
+# plt.grid()
+# plt.show()
