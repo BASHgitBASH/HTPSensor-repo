@@ -4,4 +4,5 @@ This python code reads and writes real time data taken from a humidty, temperatu
 of a SSH protocol as communication between the microcontroller and a laptop.
 
 Sensor - Waveshare, BME280 Environmental Sensor 
+
 Microcontroller - Raspberry Pi 4
