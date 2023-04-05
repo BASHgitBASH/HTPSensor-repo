@@ -5,7 +5,5 @@ The HTP_Sensor.py code reads and writes real time data taken from a humidty, tem
 The HTP_dataplot file was used to plot the data.
 
 Sensor - Waveshare, BME280 Environmental Sensor.
-Microcontroller - Raspberry Pi 4
-
-TEST
+Microcontroller - Raspberry Pi 4.
 
